@@ -1,0 +1,25 @@
+.logo,
+.logo-footer {
+  font-family: var(--logo-font-family);
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+}
+
+.logo {
+  display: inline-block;
+  margin-right: 93px;
+
+  &__footer {
+    margin: 0px;
+  }
+
+  &__text {
+    color: var(--accent-color);
+  }
+}
+
+.logo__text--white {
+  color: var(--hero-text-color);
+}

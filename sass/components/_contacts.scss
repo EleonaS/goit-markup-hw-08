@@ -1,0 +1,37 @@
+.contacts {
+  display: block;
+
+  &__list {
+    display: inline-flex;
+    font-style: inherit;
+  }
+
+  &__item + &__item {
+    margin-left: 50px;
+  }
+
+  &__item:not(:last-child) {
+    margin: 0px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color var(--duration) var(--timing-function);
+  }
+
+  &__icon {
+    margin-right: 10px;
+    stroke: currentColor;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-color);
+  }
+}

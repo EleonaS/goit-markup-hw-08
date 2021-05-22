@@ -1,0 +1,14 @@
+.footer .conteiner {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer {
+  background-color: var(--footer-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-nav {
+  width: calc(100% / 12 * 3);
+}

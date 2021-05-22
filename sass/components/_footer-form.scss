@@ -1,0 +1,78 @@
+.subscribe {
+  margin-left: auto;
+
+  &__title {
+    color: var(--hero-text-color);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+}
+
+.footer-form {
+  display: flex;
+
+  &__input {
+    width: 358px;
+    height: 50px;
+
+    margin-right: 12px;
+    padding: 15px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    color: var(--primary-bg-color);
+    background-color: var(--footer-bg-color);
+  }
+
+  &__input::placeholder {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    width: 200px;
+    height: 50px;
+
+    color: var(--hero-text-color);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: background-color var(--duration) var(--timing-function);
+  }
+
+  &__button:hover {
+    background-color: var(--accent-color);
+  }
+
+  &__icon {
+    margin-left: 10px;
+    top: 13px;
+    bottom: 13px;
+    fill: var(--primary-bg-color);
+  }
+}

@@ -1,0 +1,30 @@
+.address {
+  margin: 20px 0px 0px;
+
+  &__item {
+    margin-top: 9px;
+  }
+
+  &__list {
+    font-style: normal;
+    line-height: 1.71;
+  }
+
+  &__text {
+    text-decoration: none;
+    color: var(--hero-text-color);
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--footer-contact-color);
+    transition: color var(--duration) var(--timing-function);
+  }
+
+  &__link:hover,
+  &__link:focus,
+  &__text:hover,
+  &__text:focus {
+    color: var(--accent-color);
+  }
+}
