@@ -62,14 +62,14 @@
 
     <main>
       <section class="hero" id="studio">
-        <div class="conteiner">
-          <div class="hero__content">
-            <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-            <button class="hero__button" type="button" data-modal-open>
-              Заказать услугу
-            </button>
-          </div>
+        <!--<div class="conteiner">-->
+        <div class="hero__content">
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <button class="hero__button" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
+        <!--</div>-->
       </section>
       <!--Особенности-->
       <section class="section">
@@ -167,12 +167,32 @@
           <h2 class="team__title--stl">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
+              <picture>
+                <source
+                  srcset="./images/foto1.jpg 1x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/t-foto1.jpg 1x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/m-foto1.jpg 1x"
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="team__foto"
+                  src="./images/m-foto1.jpg"
+                  alt="Фото Игорь Демьяненко"
+                  aria-label="Игорь Демьяненко"
+                />
+              </picture>
+
+              <!--<img
                 class="team__foto"
                 src="./images/foto1.jpg"
                 alt="Product Designer"
-                width="270"
-              />
+              />-->
               <div class="team__content">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p lang="en" class="team__position">Product Designer</p>
@@ -235,12 +255,32 @@
               </div>
             </li>
             <li class="team__item">
-              <img
+              <picture>
+                <source
+                  srcset="./images/foto2.jpg 1x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/t-foto2.jpg 1x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/m-foto2.jpg 1x"
+                  media="(min-width:480px)"
+                />
+                <img
+                  class="team__foto"
+                  src="./images/m-foto2.jpg"
+                  alt="Фото Ольга Репина"
+                  aria-label="Ольга Репина"
+                />
+              </picture>
+              <!--<img
                 class="team__foto"
                 src="./images/foto2.jpg"
                 alt="Frontend Developer"
                 width="270"
-              />
+              />-->
               <div class="team__content">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p lang="en" class="team__position">Frontend Developer</p>
@@ -303,12 +343,32 @@
               </div>
             </li>
             <li class="team__item">
-              <img
+              <!--<img
                 class="team__foto"
                 src="./images/foto3.jpg"
                 alt="Marketing"
                 width="270"
-              />
+              />-->
+              <picture>
+                <source
+                  srcset="./images/foto3.jpg 1x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/t-foto3.jpg 1x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/m-foto3.jpg 1x"
+                  media="(min-width:480px)"
+                />
+                <img
+                  class="team__foto"
+                  src="./images/m-foto3.jpg"
+                  alt="Фото Николай Тарасов"
+                  aria-label="Николай Тарасов"
+                />
+              </picture>
               <div class="team__content">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p lang="en" class="team__position">Marketing</p>
@@ -371,12 +431,32 @@
               </div>
             </li>
             <li class="team__item">
-              <img
+              <!-- <img
                 class="team__foto"
                 src="./images/foto4.jpg"
                 alt="UI Designer"
                 width="270"
-              />
+              />-->
+              <picture>
+                <source
+                  srcset="./images/foto4.jpg 1x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/t-foto4.jpg 1x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/m-foto4.jpg 1x"
+                  media="(min-width:480px)"
+                />
+                <img
+                  class="team__foto"
+                  src="./images/m-foto4.jpg"
+                  alt="Фото Михаил Ермаков"
+                  aria-label="Михаил Ермаков"
+                />
+              </picture>
               <div class="team__content">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p lang="en" class="team__position">UI Designer</p>
@@ -452,7 +532,7 @@
                 rel="noopener noreferrer"
               >
                 <svg class="clients__icon">
-                  <use href="./images/icons/icons.svg#clients__icon 1"></use>
+                  <use href="./images/icons/icons.svg#icon-logo1"></use>
                 </svg>
               </a>
             </li>
@@ -464,7 +544,7 @@
                 rel="noopener noreferrer"
               >
                 <svg class="clients__icon">
-                  <use href="./images/icons/icons.svg#clients__icon 2"></use>
+                  <use href="./images/icons/icons.svg#icon-logo2"></use>
                 </svg>
               </a>
             </li>
@@ -476,7 +556,7 @@
                 rel="noopener noreferrer"
               >
                 <svg class="clients__icon">
-                  <use href="./images/icons/icons.svg#clients__icon 3"></use>
+                  <use href="./images/icons/icons.svg#icon-logo3"></use>
                 </svg>
               </a>
             </li>
@@ -488,7 +568,7 @@
                 rel="noopener noreferrer"
               >
                 <svg class="clients__icon">
-                  <use href="./images/icons/icons.svg#clients__icon 4"></use>
+                  <use href="./images/icons/icons.svg#icon-logo4"></use>
                 </svg>
               </a>
             </li>
@@ -500,7 +580,7 @@
                 rel="noopener noreferrer"
               >
                 <svg class="clients__icon">
-                  <use href="./images/icons/icons.svg#clients__icon 5"></use>
+                  <use href="./images/icons/icons.svg#icon-logo5"></use>
                 </svg>
               </a>
             </li>
@@ -512,7 +592,7 @@
                 rel="noopener noreferrer"
               >
                 <svg class="clients__icon">
-                  <use href="./images/icons/icons.svg#clients__icon 6"></use>
+                  <use href="./images/icons/icons.svg#icon-logo6"></use>
                 </svg>
               </a>
             </li>
