@@ -40,6 +40,19 @@
     display: block;
   }
 
+  /*&__services-list {
+    @extend %list;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-top: -15px;
+
+    @media screen and (min-width: $tablet) {
+      justify-content: center;
+    }
+  }*/
+
   &__item:not(:last-child) {
     margin-right: 8px;
   }
@@ -47,93 +60,116 @@
 
 .portfolio {
   display: block;
+}
+.portfolio__list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
 
-  &__item {
-    flex-basis: calc((100% - 3 * 30px) / 3);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
+.portfolio__item {
+  width: 100%;
+
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
     margin-left: 30px;
     margin-top: 30px;
   }
 
-  &__link {
-    display: block;
-    transition: box-shadow var(--duration) var(--timing-function);
-    text-decoration: none;
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
   }
-
-  &__link:hover,
-  &__link:focus {
-    border: 1px solid var(--portfolio-border);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-
-  &__list {
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-
-    margin-left: -30px;
-    margin-top: -30px;
-  }
-
-  &__content {
-    padding: 20px 0 20px 24px;
-    background: var(--primary-bg-color);
-    border-right: 1px solid var(--portfolio-border);
-    border-bottom: 1px solid var(--portfolio-border);
-    border-left: 1px solid var(--portfolio-border);
-    text-decoration: none;
-  }
-
-  &__title {
-    color: var(--primary-text-color);
-    margin-bottom: 4px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-  }
-
-  &__overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--overlay-bg-color);
-
-    transform: translatey(100%);
-    transition: transform var(--duration) var(--timing-function);
-  }
-  &__thumb {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
+}
+.portfolio__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
   }
 }
 
-.portfolio__thumb:hover .potfolio__overlay {
-  transform: translatey(0);
+.portfolio__link {
+  display: block;
+  transition: box-shadow var(--duration) var(--timing-function);
+  text-decoration: none;
 }
 
+.portfolio__link:hover,
+.portfolio__link:focus {
+  border: 1px solid var(--portfolio-border);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio__content {
+  padding: 20px 0 20px 24px;
+  background: var(--primary-bg-color);
+  border-right: 1px solid var(--portfolio-border);
+  border-bottom: 1px solid var(--portfolio-border);
+  border-left: 1px solid var(--portfolio-border);
+  text-decoration: none;
+}
+
+.portfolio__title {
+  color: var(--primary-text-color);
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio__text--cl {
+  font-size: 16px;
+  line-height: 1.87;
+}
 .portfolio__text--cl {
   @extend %cl;
 }
 
-.portfolio__overlay--text {
-  color: var(--hero-text-color);
+.box {
+  position: relative;
+  width: 100%;
 
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.box:hover .overlay {
+  transform: translatey(0);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay-bg-color);
+  transform: translatey(100%);
+  transition: transform var(--duration) var(--timing-function);
+}
+
+.overlay > p {
+  color: var(--hero-text-color);
   margin: 0;
   padding-top: 63px;
   padding-right: 24px;
   padding-bottom: 63px;
   padding-left: 24px;
-
   font-size: 18px;
   line-height: 1.56;
 }
