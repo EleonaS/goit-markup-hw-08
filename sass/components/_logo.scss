@@ -9,7 +9,12 @@
 
 .logo {
   display: inline-block;
-  margin-right: 93px;
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 
   &__footer {
     margin: 0px;

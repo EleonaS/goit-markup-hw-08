@@ -1,37 +1,84 @@
 .contacts {
-  display: block;
-
-  &__list {
-    display: inline-flex;
-    font-style: inherit;
+  display: flex;
+  @media screen and (min-width: 768px) {
+    margin-left: 84px;
   }
+}
 
-  &__item + &__item {
+.contacts__list {
+  display: flex;
+  font-style: inherit;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.contacts__item + .contacts__item {
+  @media screen and (min-width: 1200px) {
     margin-left: 50px;
   }
+}
 
-  &__item:not(:last-child) {
-    margin: 0px;
+.contacts__item:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
   }
-  &__link {
-    display: flex;
-    align-items: center;
+}
 
-    color: var(--secondary-text-color);
-    font-weight: 500;
+.contacts__link {
+  display: flex;
+  align-items: center;
+
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color var(--duration) var(--timing-function);
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    transition: color var(--duration) var(--timing-function);
   }
+}
 
-  &__icon {
-    margin-right: 10px;
-    stroke: currentColor;
+.contacts-one__icon,
+.contacts-second__icon {
+  margin-right: 10px;
+  stroke: currentColor;
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+  color: var(--accent-color);
+}
+.contacts-one__icon {
+  @media screen and (min-width: 768px) {
+    width: 14px;
+    height: 10px;
   }
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
 
-  &__link:hover,
-  &__link:focus {
-    color: var(--accent-color);
+.contacts-second__icon {
+  @media screen and (min-width: 768px) {
+    width: 10px;
+    height: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
   }
 }
