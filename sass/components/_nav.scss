@@ -15,7 +15,7 @@
   @media screen and (max-width: 767px) {
     position: absolute;
     right: 30px;
-    top: -5px;
+    top: 10;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -99,11 +99,11 @@
     align-items: center;
     height: 100%;
   }
+}
 
-  &.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-  }
+.mobile-menu .is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .mobile-menu__list {

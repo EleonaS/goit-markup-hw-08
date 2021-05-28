@@ -65,7 +65,7 @@
     width: 448px;
     height: 40px;
   }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     width: 370px;
     height: 40px;
   }
@@ -155,7 +155,6 @@
 
 .conditions {
   color: var(--accent-color);
-  margin-left: 5px;
 }
 
 .form-checkbox__input {
