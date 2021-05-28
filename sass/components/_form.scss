@@ -147,7 +147,16 @@
     line-height: 1.71;
   }
 }
-
+.checkbox__text {
+  display: block;
+  text-align: center;
+  justify-content: stretch;
+}
+.checkbox__text {
+  display: block;
+  text-align: center;
+  justify-content: stretch;
+}
 .conditions {
   color: var(--accent-color);
   margin-left: 5px;
