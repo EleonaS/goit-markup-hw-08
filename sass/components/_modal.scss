@@ -8,6 +8,7 @@
   z-index: 2;
   opacity: 1;
   transition: opacity var(--duration) var(--timing-function);
+  overflow-y: scroll;
 }
 
 .is-hidden {

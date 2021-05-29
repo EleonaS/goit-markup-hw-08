@@ -174,3 +174,9 @@
   font-size: 18px;
   line-height: 1.56;
 }
+
+.picture-portfolio {
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+}
