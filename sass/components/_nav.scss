@@ -84,7 +84,7 @@
 
 .mobile-menu {
   z-index: 999;
-  opacity: 1;
+  /*opacity: 1;*/
   position: absolute;
 
   background-color: var(--primary-bg-color);
@@ -95,6 +95,7 @@
   width: 100vw;
   height: 100vh;
   padding: 48px 0;
+  transition: opacity var(--duration) var(--timing-function);
 
   .conteiner {
     position: relative;
